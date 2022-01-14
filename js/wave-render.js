@@ -1,7 +1,7 @@
 function App() {
   const conf = {
-    nx: 100,
-    ny: 250,
+    nx: 50,
+    ny: 50,
     cscale: chroma.scale(['#000000', '#0b0d12', '#11141c', '#1c212e', '#2a3145', '#3c4663']).mode('lch'),
     darken: -0.4,
     angle: Math.PI / 3,
