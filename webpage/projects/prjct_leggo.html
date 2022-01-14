@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Leggo | Simon Gorbet</title>
+        <!-- External CSS -->
+        <link rel="stylesheet" href="../../css/main.css">
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <!-- Dependency -->
+        <meta charset="UTF-8">>
+    </head>
+<!-- Allow Scrolling -->
+<body style="overflow-y: scroll">
+    <!--  Navigation Bar -->
+    <div class="navbar-container">
+        <nav class=nav-links>
+            <a class="nav-link" href="../../webpage/about.html"> About Me</a>
+            <a class="nav-link" href="../../webpage/projects.html"> Projects</a>
+            <a class="logo-link" href="../../index.html"><img class="sg-icon" src="../../assets/icons/SG-icon.svg" alt="SG logo" width="110" height="auto"></a>
+            <a class="nav-link" href="../../webpage/resume.html"> Resume</a>
+            <a class="nav-link" href="../../webpage/contact.html"> Contact Me</a>
+        </nav>
+    </div>
+
+    <div class="project-blog-container">
+        <div class="project-blog">
+
+            <!-- Title Example -->
+            <h1 class="project-blog-title">Leggo - Prototype Quadrupedal Leg</h1>
+            <br>
+            
+            <!-- Paragraph Example -->
+            <h2 class="project-blog-subtitle">Background</h2>
+            <div class="mini-break"></div>
+            <p class="project-blog-normal-text">I find quadruped robots super cool and as someone interested in robotics, I saw my grade 12 tech project as a way to learn more about them. Because of Covid-19 and the quadmestered school system, I had a little over a month's time to split between calculus and this project. Because of the tight timeline, certain aspects of the project had to be sacrificed but I still learned a lot.</p>
+            <br>
+            
+            <!-- Paragraph Example -->
+            <h2 class="project-blog-subtitle">Design</h2>
+            <div class="mini-break"></div>
+            <p class="project-blog-normal-text">I took inspiration from the co-axial mechanism used on Stanford's quadrupedal robot Doggo. The leg uses 2 stepper motors to drive the end effector. Ideally, I would have used brushless motors with encoders but due to time and budget constraints I had to use stepper motors. The leg is entirely 3d printed with the exception of basic hardware.</p>
+            <img class="project-blog-image" src="../../assets/project-assets/leggo/leggo_img.jpg" alt="image of Leggo next to a tape measure" width="700px">
+            <figcaption class="project-figure-caption">Fig.1 - Image of Leggo</figcaption>
+            <br>
+
+            <!-- Paragraph Example -->
+            <h2 class="project-blog-subtitle">CAD & 3d Printing</h2>
+            <div class="mini-break"></div>
+            <p class="project-blog-normal-text">I have experience in both these fields through FIRST Robotics and other side projects so I was least worried about it. I used SolidWorks for CAD and parts were printed on my Prusa I3 Mk3.</p>
+            <figure class="iframe-container">
+                <iframe scrolling='no' frameborder='0' allowfullscreen='true' src='https://www.3dcontentcentral.com/external-site-embed.aspx?format=3D&catalogid=171&modelid=1608542&width=250&height=250&edraw=true' name='PreviewFrame3D' id='PreviewFrame3D' width='700' height='500'></iframe><br/>
+                <figcaption class="project-figure-caption">Fig.2 - Solidworks Assembly of Leg</figcaption>
+            </figure>
+            <br>
+
+            <!-- Paragraph Example -->
+            <h2 class="project-blog-subtitle">Code</h2>
+            <div class="mini-break"></div>
+            <p class="project-blog-normal-text">The code for Leggo was written in the Arduino IDE using the Arduino C++ variant. The final code for Leggo's walk gait uses angles stored in arrays that were calculated using inverse kinematics and trig. from cartesian coordinates plotted in Desmos.</p>
+            <br>
+            
+            <!-- Paragraph Example -->
+            <h2 class="project-blog-subtitle">Electronics</h2>
+            <div class="mini-break"></div>
+            <p class="project-blog-normal-text">The electronic portion of this project was pretty simple. I used an Arduino Uno microcontroller along with 2 stepper motor driver boards to control the motors. No encoders were used because I did not have any available at the time.</p>
+            <img class="project-blog-image" src="../../assets/project-assets/leggo/leggo_breadboard.jpg" alt="image of breadboard" width="700px">
+            <figcaption class="project-figure-caption">Fig.3 - Image of Complete Breadboard Circuit</figcaption>
+            <br>
+
+            <h2 class="project-blog-subtitle">What I Learned</h2>
+            <div class="mini-break"></div>
+            <p class="project-blog-normal-text">This was by far the most complicated project I've taken on. Getting all the aspects to work together by myself in a month was tough, but I really enjoyed it. Beyond the technical skills, I picked up during development I learned a lot about project management. Allocating time, using repos, deciding what comes first, presenting progress to others, etc. was all new to me. The CAD & 3D Printing portion of the leg was the easiest portion for me. From FIRST Robotics and other printing projects, my experience made it easy. The electronics portion was a little more difficult but nothing too complex. The hardest part was picking and finding the right components that could ship quickly. Building the circuit was more complicated than others I have done in the past but was still relatively easy to figure out. Writing the firmware though is a whole other story. It was by far the most complicated part of this project. I spent a lot of time trying to think of different ways to create the walk gait. My first thought was that it could be represented by some trig function. After testing I realized that was not the case. Later, after several more tests, I found that it could be represented using 2 functions to form a sort of bean shape. I could then take coordinates from the graph and use inverse kinematics to create angles for the stepper motors to follow. Before this project my experience with writing Arduino firmware was very basic, mainly following examples online and not trying to achieve anything too complex, this was a few steps up. There is no doubt that I learned the most in the firmware portion of this project.</p>
+            <br>
+
+            <h2 class="project-blog-subtitle">Project Files</h2>
+            <div class="mini-break"></div>
+            <p class="project-blog-normal-text">All files for this project can be found in its GitHub repository. Please excuse the poor formatting, my first priority for this project was to get a working walk gait and if I could do it all over again I would put more care into organization.</p>
+            <p class="project-blog-link-name">Link to GitHub page: <a class="project-blog-link" href="https://github.com/Bonous/Leggo-v1-rep" target="_blank">Leggo Github Repo</a></p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </div>
+</body>
+</html>
