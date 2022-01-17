@@ -426,6 +426,7 @@ canvas {
 
 .project-blog-image {
   margin-top: 15px;
+  border-radius: 10%;
 }
 
 .project-figure-caption {
@@ -465,12 +466,12 @@ canvas {
   color: var(--main-text-colour);
 }
 
-ul li::before {
+/* ul li::before {
   margin-left: 1em;
   list-style-position: inside;
   content: "\2022";
   color: #e6e6e6;
-}
+} */
 
 /*#endregion*/
 /*# sourceMappingURL=main.css.map */
