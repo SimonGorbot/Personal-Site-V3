@@ -474,4 +474,20 @@ canvas {
 } */
 
 /*#endregion*/
+
+.column {
+  margin: auto;
+  padding: 0;
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
 /*# sourceMappingURL=main.css.map */
